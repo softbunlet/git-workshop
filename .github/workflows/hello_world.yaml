@@ -13,7 +13,7 @@ jobs:
     - id: s00
       run: echo "Current time is $(date), $(GITHUB_OUTPUT)"
     - id: s01
-      run: echo "CURR_DATE=$(date) >> $GITHUB_OUTPUT"
+      run: echo "CURR_DATE=$(date)" >> $GITHUB_OUTPUT
     - id: s02      
       uses: mscoutermarsh/cowsays-action@master
       with:
