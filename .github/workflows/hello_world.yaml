@@ -13,5 +13,8 @@ jobs:
     - id: s00
       run: echo "Current time is $(date)"
       #running some shell commands in bash
-    - id: s01
-      run: ls
+    - id: s01      
+      uses: mscoutermarsh/cowsays-action@master
+      with:
+        text: 'ship ship ship!'
+        color: 'red'
